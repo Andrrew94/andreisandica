@@ -1,0 +1,13 @@
+//globals
+@import "resets";
+@import "variables";
+
+// pages
+@import 'pages/landing';
+@import 'pages/contact';
+@import 'pages/about';
+@import 'pages/projects';
+
+//components
+@import "components/header";
+@import "components/grid";
