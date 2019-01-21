@@ -1,0 +1,23 @@
+{
+  "name": "andreisandica",
+  "version": "1.0.0",
+  "description": "Main website",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrrew94/andreisandica.git"
+  },
+  "author": "Andrei Sandica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrrew94/andreisandica/issues"
+  },
+  "homepage": "https://github.com/Andrrew94/andreisandica#readme"
+}
