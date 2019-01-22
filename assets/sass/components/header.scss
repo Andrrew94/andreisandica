@@ -37,6 +37,7 @@ header {
         padding: 0 12px;
         font-size: 18px;
         white-space: nowrap;
+        border-bottom: 1px solid transparent;
 
         @media (max-width: 768px) {
           padding: 0 7px;
