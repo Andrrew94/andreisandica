@@ -53,7 +53,27 @@
     </section>
 
     <section class="contact">
-
+      <div class="contact__title">Contact</div>
+      <p class="contact__description">Interested in working together ? Send me an e-mail with your project details and I will contact you as soon as I can.</p>
+      <form class="contact__form" action="index.html" method="post">
+        <p>
+          <label for="name">Full name</label>
+          <input type="text" name="userFullName" id="name" required>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="userEmail" id="email" required>
+        </p>
+        <p>
+          <label for="details">Project details</label>
+          <textarea name="details"></textarea>
+        </p>
+        <p>
+          <label for="human">5 + 5 = ?</label>
+          <input type="number" name="humanCheck" id="human" placeholder="Your answer" required>
+        </p>
+        <button type="submit" name="sendMessage">Send message</button>
+      </form>
     </section>
 
     <section class="about">
