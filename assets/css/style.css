@@ -118,6 +118,9 @@ img {
       margin-top: 15px;
       cursor: pointer; }
 
+.projects .row.visible {
+  display: flex; }
+
 @media (max-width: 768px) {
   .projects .row .col {
     width: calc((100% / 2) - 30px); } }
@@ -156,35 +159,74 @@ img {
           bottom: 0;
           left: 0; }
 
-.projects__card {
-  margin-top: 30px;
-  position: relative;
-  background-color: #fff; }
-  .projects__card__img {
-    background-image: url("../images/react.png");
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-    position: relative; }
-    .projects__card__img h3 {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 400; }
-  .projects__card__info p {
-    padding: 20px; }
-  .projects__card__info ul {
-    border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center; }
-    .projects__card__info ul li {
-      padding: 15px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #4F833F;
-      text-transform: uppercase; }
+.projects .row {
+  display: none; }
+  .projects .row .projects-react__card,
+  .projects .row .projects-vue__card,
+  .projects .row .projects-angular__card,
+  .projects .row .projects-vanila__card {
+    margin-bottom: 30px;
+    position: relative;
+    background-color: #fff; }
+    .projects .row .projects-react__card__img,
+    .projects .row .projects-vue__card__img,
+    .projects .row .projects-angular__card__img,
+    .projects .row .projects-vanila__card__img {
+      background-position: center;
+      background-size: cover;
+      height: 200px;
+      position: relative; }
+      .projects .row .projects-react__card__img--react,
+      .projects .row .projects-vue__card__img--react,
+      .projects .row .projects-angular__card__img--react,
+      .projects .row .projects-vanila__card__img--react {
+        background-image: url("../images/react.png"); }
+      .projects .row .projects-react__card__img--vue,
+      .projects .row .projects-vue__card__img--vue,
+      .projects .row .projects-angular__card__img--vue,
+      .projects .row .projects-vanila__card__img--vue {
+        background-image: url("../images/vue.jpeg"); }
+      .projects .row .projects-react__card__img--angular,
+      .projects .row .projects-vue__card__img--angular,
+      .projects .row .projects-angular__card__img--angular,
+      .projects .row .projects-vanila__card__img--angular {
+        background-image: url("../images/angular.jpg"); }
+      .projects .row .projects-react__card__img--vanila,
+      .projects .row .projects-vue__card__img--vanila,
+      .projects .row .projects-angular__card__img--vanila,
+      .projects .row .projects-vanila__card__img--vanila {
+        background-image: url("../images/htmlcss.jpg"); }
+      .projects .row .projects-react__card__img h3,
+      .projects .row .projects-vue__card__img h3,
+      .projects .row .projects-angular__card__img h3,
+      .projects .row .projects-vanila__card__img h3 {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400; }
+    .projects .row .projects-react__card__info p,
+    .projects .row .projects-vue__card__info p,
+    .projects .row .projects-angular__card__info p,
+    .projects .row .projects-vanila__card__info p {
+      padding: 20px; }
+    .projects .row .projects-react__card__info ul,
+    .projects .row .projects-vue__card__info ul,
+    .projects .row .projects-angular__card__info ul,
+    .projects .row .projects-vanila__card__info ul {
+      border-top: 1px solid #ccc;
+      display: flex;
+      justify-content: center; }
+      .projects .row .projects-react__card__info ul li,
+      .projects .row .projects-vue__card__info ul li,
+      .projects .row .projects-angular__card__info ul li,
+      .projects .row .projects-vanila__card__info ul li {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #4F833F;
+        text-transform: uppercase; }
 
 header {
   height: 60px;
@@ -233,7 +275,7 @@ header {
 
 .row {
   display: flex;
-  margin: 0 -15px;
+  margin: 30px -15px;
   flex-wrap: wrap; }
   .row .col {
     margin: 0 15px; }

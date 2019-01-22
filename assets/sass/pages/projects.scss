@@ -1,5 +1,9 @@
 .projects {
   .row {
+    &.visible {
+      display: flex;
+    }
+
     .col {
       @media (max-width: 768px) {
         width: calc((100% / 2) - 30px);
@@ -28,7 +32,6 @@
         font-weight: bold;
         cursor: pointer;
         position: relative;
-
         @media (max-width: 578px) {
           font-size: 14px;
         }
@@ -51,17 +54,37 @@
     }
   }
 
-  &__card {
-    margin-top: 30px;
+.row {
+  display: none;
+  .projects-react__card,
+  .projects-vue__card,
+  .projects-angular__card,
+  .projects-vanila__card {
+    margin-bottom: 30px;
     position: relative;
     background-color: #fff;
 
     &__img {
-      background-image: url("../images/react.png");
       background-position: center;
       background-size: cover;
       height: 200px;
       position: relative;
+
+      &--react {
+        background-image: url("../images/react.png");
+      }
+
+      &--vue {
+        background-image: url("../images/vue.jpeg");
+      }
+
+      &--angular {
+        background-image: url("../images/angular.jpg");
+      }
+
+      &--vanila {
+        background-image: url("../images/htmlcss.jpg");
+      }
 
       h3 {
         position: absolute;
@@ -93,4 +116,6 @@
       }
     }
   }
+}
+
 }
